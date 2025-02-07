@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "node api.js",
+    "dev": "node api.js",
+    "build": "node api.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  }
+}
