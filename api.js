@@ -18,10 +18,12 @@ app.use((req, res, next) => {
 const search = require("./search");
 const details = require("./details");
 const load = require("./ifsc/loadData");
+const sendIpoMessage = require("./scrap/send_ipo_message");
 
 app.use("/app/search", search);
 app.use("/app/details", details);
 app.use("/app/load", load);
+app.use("/app/ipo", sendIpoMessage);
 
 // -------------------------------------------------------------------------------------------------------
 app.get("/", (req, res) => {
